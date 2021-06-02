@@ -6,3 +6,9 @@ function toggleModal() {
 }
 
 toggleModal();
+
+const closeModalButton = document.querySelector('#closeModal');
+
+closeModalButton.addEventListener('click', () => {
+    toggleModal();
+});
