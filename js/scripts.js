@@ -5,12 +5,6 @@ function toggleModal() {
     overlay.classList.toggle('visible');
 }
 
-const closeModalButton = document.querySelector('#closeModal');
-
-closeModalButton.addEventListener('click', () => {
-    toggleModal();
-});
-
 function buildQuote(theQuote) {
     const modalElement = document.querySelector('#modal p');
     modalElement.innerText = theQuote;
@@ -28,4 +22,23 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error("ERROR: ", error);
             return error;
     });
+
+    const closeModalButton = document.querySelector('#closeModal');
+
+    closeModalButton.addEventListener('click', () => {
+        toggleModal();
+    });
+
+    // const overlay = document.querySelector('#overlay');
+
+    // overlay.addEventListener('click', () => {
+    //     toggleModal();
+    // });
+
+    document.addEventListener('keydown', (event) => {
+        console.log(event.key);
+        if (event.key === 'Escape') {
+            toggleModal();
+        }
+    })
 });

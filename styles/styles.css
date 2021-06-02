@@ -59,3 +59,9 @@ body {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
+
+button.modal__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
