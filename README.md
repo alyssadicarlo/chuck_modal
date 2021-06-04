@@ -1,4 +1,4 @@
-# Chuck Norris Modal & API
+# Chuck Norris Modal
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/dca05ea0-d734-47ca-a84b-fb0cfee80c5a/deploy-status)](https://app.netlify.com/sites/chuck-says/deploys)
 
